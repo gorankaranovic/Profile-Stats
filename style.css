@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: yellow;
+}
+.container{
+    margin: 20px;
+    border: 2px dotted green;
+    min-width: 200px;
+    height: 100px;
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.number{
+    font-size: 40px;
+    margin-top: 15px;
+    color: green;
+}
+
+@media (max-width: 700px){
+    body{
+        flex-direction: column;
+    }
+}
